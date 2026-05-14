@@ -2,85 +2,54 @@
 <html>
 <head>
     <title>Bakery Menu</title>
-
-    <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
 </head>
-
-<body>
-
-    <h1>Bakery Items</h1>
-
-    <!-- Navigation -->
+<body class="bakery-page">
     <nav>
         <a href="index.html">Coffee</a>
         <a href="bakery.html">Bakery</a>
         <a href="matcha.html">Matcha</a>
+        <a href="https://www.instagram.com/truefolkespresso?igsh=dG94cG10cWdienA5" target="_blank" class="instagram-link">Instagram</a>
     </nav>
-
-    <!-- JS Interaction -->
-    <button onclick="showBakerySpecial()">Today’s Bakery Special</button>
-    <p id="bakeryMessage"></p>
-
-    <h2>Our Bakery Menu</h2>
-
-    <!-- List -->
-    <ul>
-        <li>Banana Cinnamon Roll</li>
-        <li>Berry Cinnamon Roll</li>
-        <li>Coffee Cake</li>
-        <li>Original Cinnamon Roll</li>
-    </ul>
-
-    <!-- Images -->
-    <div class="drink">
-        <img src="banana_roll.jpg" width="200" alt="Banana Cinnamon Roll">
-        <h3>Banana Cinnamon Roll</h3>
+    <div class="page-wrapper">
+        <h1>Bakery Items</h1>
+        <button onclick="showBakerySpecial()">Today's Bakery Special</button>
+        <p id="bakeryMessage"></p>
+        <h2>Our Bakery Menu</h2>
+        <ul>
+            <li>Banana Cinnamon Roll</li>
+            <li>Berry Cinnamon Roll</li>
+            <li>Coffee Cake</li>
+            <li>Original Cinnamon Roll</li>
+        </ul>
+        <div class="drinks-grid">
+            <div class="drink">
+                <img src="banana_roll.jpg" width="200" alt="Banana Cinnamon Roll">
+                <h3>Banana Cinnamon Roll</h3>
+            </div>
+            <div class="drink">
+                <img src="berry_roll.jpg" width="200" alt="Berry Cinnamon Roll">
+                <h3>Berry Cinnamon Roll</h3>
+            </div>
+            <div class="drink">
+                <img src="coffee_cake.jpg" width="200" alt="Coffee Cake">
+                <h3>Coffee Cake</h3>
+            </div>
+            <div class="drink">
+                <img src="cinnamon_roll.jpg" width="200" alt="Original Cinnamon Roll">
+                <h3>Original Cinnamon Roll</h3>
+            </div>
+        </div>
+        <h2>Pricing</h2>
+        <table>
+            <tr><th>Item</th><th>Price</th></tr>
+            <tr><td>Banana Cinnamon Roll</td><td>$7</td></tr>
+            <tr><td>Berry Cinnamon Roll</td><td>$7</td></tr>
+            <tr><td>Coffee Cake</td><td>$7</td></tr>
+            <tr><td>Original Cinnamon Roll</td><td>$7</td></tr>
+        </table>
     </div>
-
-    <div class="drink">
-        <img src="berry_roll.jpg" width="200" alt="Berry Cinnamon Roll">
-        <h3>Berry Cinnamon Roll</h3>
-    </div>
-
-    <div class="drink">
-        <img src="coffee_cake.jpg" width="200" alt="Coffee Cake">
-        <h3>Coffee Cake</h3>
-    </div>
-
-    <div class="drink">
-        <img src="cinnamon_roll.jpg" width="200" alt="Original Cinnamon Roll">
-        <h3>Original Cinnamon Roll</h3>
-    </div>
-
-    <!-- Table -->
-    <h2>Pricing</h2>
-
-    <table border="1">
-        <tr>
-            <th>Item</th>
-            <th>Price</th>
-        </tr>
-        <tr>
-            <td>Banana Cinnamon Roll</td>
-            <td>$7</td>
-        </tr>
-        <tr>
-            <td>Berry Cinnamon Roll</td>
-            <td>$7</td>
-        </tr>
-        <tr>
-            <td>Coffee Cake</td>
-            <td>$7</td>
-        </tr>
-        <tr>
-            <td>Original Cinnamon Roll</td>
-            <td>$7</td>
-        </tr>
-    </table>
-
 </body>
 </html>

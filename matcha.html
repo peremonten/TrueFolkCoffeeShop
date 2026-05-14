@@ -2,52 +2,43 @@
 <html>
 <head>
     <title>Matcha Menu</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
 </head>
-<body>
-    <h1>Matcha Selection</h1>
+<body class="matcha-page">
     <nav>
         <a href="index.html">Coffee</a>
         <a href="bakery.html">Bakery</a>
         <a href="matcha.html">Matcha</a>
+        <a href="https://www.instagram.com/truefolkespresso?igsh=dG94cG10cWdienA5" target="_blank" class="instagram-link">Instagram</a>
     </nav>
-    <button onclick="showMatchaHistory()">Learn About Matcha History</button>
-    <p id="matchaHistory"></p>
-    <h2>Our Matcha Drinks</h2>
-    <img src="matcha.jpg" width="350" alt="Matcha Menu">
-    <ul>
-        <li>Strawberry Tart Cake Matcha — $7</li>
-        <li>Blueberry Tart Cake Matcha — $7</li>
-        <li>Mango Tart Cake Matcha — $7</li>
-    </ul>
-    <h2>Pricing</h2>
-    <table border="1">
-        <tr>
-            <th>Drink</th>
-            <th>Price</th>
-        </tr>
-        <tr>
-            <td>Strawberry Tart Cake Matcha</td>
-            <td>$7</td>
-        </tr>
-        <tr>
-            <td>Blueberry Tart Cake Matcha</td>
-            <td>$7</td>
-        </tr>
-        <tr>
-            <td>Mango Tart Cake Matcha</td>
-            <td>$7</td>
-        </tr>
-    </table>
-    <h2>About Matcha</h2>
-    <p>Matcha is a finely ground green tea powder originating from Japan. 
-    It is known for its rich flavor and cultural significance in tea ceremonies.</p>
-    <p>Learn more about matcha:
-        <a href="https://www.healthline.com/nutrition/matcha-tea" target="_blank">
-            Matcha Health Benefits
-        </a>
-    </p>
+    <div class="page-wrapper">
+        <h1>Matcha Selection</h1>
+        <button onclick="showMatchaHistory()">Learn About Matcha History</button>
+        <p id="matchaHistory"></p>
+        <h2>Our Matcha Drinks</h2>
+        <img src="matcha.jpg" width="350" alt="Matcha Menu">
+        <ul>
+            <li>Strawberry Tart Cake Matcha — $7</li>
+            <li>Blueberry Tart Cake Matcha — $7</li>
+            <li>Mango Tart Cake Matcha — $7</li>
+        </ul>
+        <h2>Pricing</h2>
+        <table>
+            <tr><th>Drink</th><th>Price</th></tr>
+            <tr><td>Strawberry Tart Cake Matcha</td><td>$7</td></tr>
+            <tr><td>Blueberry Tart Cake Matcha</td><td>$7</td></tr>
+            <tr><td>Mango Tart Cake Matcha</td><td>$7</td></tr>
+        </table>
+        <h2>About Matcha</h2>
+        <p>Matcha is a finely ground green tea powder originating from Japan.
+        It is known for its rich flavor and cultural significance in tea ceremonies.</p>
+        <p>Learn more about matcha:
+            <a href="https://www.healthline.com/nutrition/matcha-tea" target="_blank">
+                Matcha Health Benefits
+            </a>
+        </p>
+    </div>
 </body>
 </html>

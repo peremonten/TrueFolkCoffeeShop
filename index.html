@@ -2,50 +2,55 @@
 <html>
 <head>
     <title>Coffee Menu</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
 </head>
-
-<body onload="welcomeMessage()">
-    <h1>Coffee Menu</h1>
+<body class="coffee-page" onload="welcomeMessage()">
     <nav>
         <a href="index.html">Coffee</a>
         <a href="bakery.html">Bakery</a>
         <a href="matcha.html">Matcha</a>
+        <a href="https://www.instagram.com/truefolkespresso?igsh=dG94cG10cWdienA5" target="_blank" class="instagram-link">Instagram</a>
     </nav>
-    <p id="welcome"></p>
-    <h2>Signature Drinks</h2>
-    <button onclick="pickFeaturedDrink()">Show Today's Featured Drink</button>
-    <p id="featuredDrink"></p>
-    <div class="drink">
-        <img src="allthingsmaple.jpg" width="200" alt="All Things Maple">
-        <h3>All Things Maple</h3>
-        <p>Espresso with maple syrup and steamed milk.</p>
+    <div class="page-wrapper">
+        <h1>Coffee Menu</h1>
+        <p id="welcome"></p>
+        <h2>Signature Drinks</h2>
+        <button onclick="pickFeaturedDrink()">Show Today's Featured Drink</button>
+        <p id="featuredDrink"></p>
+        <div class="drinks-grid">
+            <div class="drink">
+                <img src="allthingsmaple.jpg" width="200" alt="All Things Maple">
+                <h3>All Things Maple</h3>
+                <p>Espresso with maple syrup and steamed milk.</p>
+            </div>
+            <div class="drink">
+                <img src="raspberrydanishlatte.jpg" width="200" alt="Raspberry Danish Latte">
+                <h3>Raspberry Danish Latte</h3>
+                <p>Latte inspired by raspberry pastry flavors.</p>
+            </div>
+            <div class="drink">
+                <img src="truefolkeinspanner.jpg" width="200" alt="Truefolk Einspanner">
+                <h3>Truefolk Einspanner</h3>
+                <p>Espresso topped with thick whipped cream.</p>
+            </div>
+            <div class="drink">
+                <img src="einspanner.jpg" width="200" alt="Einspanner">
+                <h3>Classic Einspanner</h3>
+                <p>Classic whipped cream coffee.</p>
+            </div>
+        </div>
+        <h2>Join Our Coffee Club</h2>
+        <form onsubmit="return submitForm()">
+            <input type="text" id="name" placeholder="Enter your name"><br><br>
+            <input type="radio" name="drink" value="Coffee"> Coffee
+            <input type="radio" name="drink" value="Matcha"> Matcha<br><br>
+            <input type="checkbox" id="subscribe"> Subscribe to emails<br><br>
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </form>
+        <p id="output"></p>
     </div>
-    <div class="drink">
-        <img src="raspberrydanishlatte.jpg" width="200" alt="Raspberry Danish Latte">
-        <h3>Raspberry Danish Latte</h3>
-        <p>Latte inspired by raspberry pastry flavors.</p>
-    </div>
-    <div class="drink">
-        <img src="truefolkeinspanner.jpg" width="200" alt="Truefolk Einspanner">
-        <h3>Truefolk Einspanner</h3>
-        <p>Espresso topped with thick whipped cream.</p>
-    </div>
-    <div class="drink">
-        <img src="einspanner.jpg" width="200" alt="Einspanner">
-        <h3>Classic whipped cream coffee.</h3>
-    </div>
-    <h2>Join Our Coffee Club</h2>
-    <form onsubmit="return submitForm()">
-        <input type="text" id="name" placeholder="Enter your name"><br><br>
-        <input type="radio" name="drink" value="Coffee"> Coffee
-        <input type="radio" name="drink" value="Matcha"> Matcha<br><br>
-        <input type="checkbox" id="subscribe"> Subscribe to emails<br><br>
-        <button type="submit">Submit</button>
-        <button type="reset">Reset</button>
-    </form>
-    <p id="output"></p>
 </body>
 </html>
